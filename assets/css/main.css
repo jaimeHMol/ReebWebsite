@@ -2,6 +2,7 @@
 @import url("https://fonts.googleapis.com/css?family=Open+Sans:400,400italic,700,700italic|Open+Sans+Condensed:700");
 
 /*
+	Base design adjusted from:
 	TXT by HTML5 UP
 	html5up.net | @ajlkn
 	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
@@ -2309,7 +2310,8 @@ input, select, textarea {
 		font-weight: 700;
 		text-transform: uppercase;
 		padding: 2em 0;
-		background: #fff;
+		/* background: #fff; */
+		background: #FFC32D;
 		margin: 0 auto;
 	}
 
@@ -2321,7 +2323,7 @@ input, select, textarea {
 		}
 
 			#header .logo div {
-				background: #fff;
+				/* background: #fff; */
 				position: relative;
 				display: inline-block;
 				padding: 0 1.5em 0 1.5em;
@@ -2334,7 +2336,7 @@ input, select, textarea {
 
 			#header .logo p {
 				display: inline;
-				color: #C1CAC5;
+				/* color: #C1CAC5; */
 			}
 
 /* Nav */
@@ -2771,14 +2773,16 @@ input, select, textarea {
 				-ms-transition: -ms-transform 0.5s ease;
 				transition: transform 0.5s ease;
 				display: block;
-				height: 44px;
+				/* height: 44px; */
+				height: 63px;
 				left: 0;
 				position: fixed;
 				top: 0;
 				width: 100%;
 				z-index: 10001;
-				background-color: rgba(21, 38, 23, 0.8);
-				background-image: url("images/overlay.png");
+				/* background-color: rgba(21, 38, 23, 0.8); */
+				background-color: #FFC32D;
+				/* background-image: url("images/overlay.png"); TODO: Could be used once we improve the logo image (remove its background)*/
 			}
 
 				#titleBar .title {
@@ -2824,13 +2828,17 @@ input, select, textarea {
 						left: 0;
 						top: 0;
 						background: #b1ddab;
-						width: 44px;
-						height: 44px;
+						/* width: 44px; */
+						width: 63px;
+						/* height: 44px; */
+						height: 63px;
 						content: '\f0c9';
 						color: #fff;
 						text-align: center;
-						line-height: 44px;
-						font-size: 20px;
+						/* line-height: 44px; */
+						line-height: 63px;
+						/* font-size: 20px; */
+						font-size: 25px;
 					}
 
 					#titleBar .toggle:active:before {
@@ -3092,6 +3100,19 @@ input, select, textarea {
 				line-height: 1.75em;
 			}
 
+
+
+
+			#titleBar {
+				height: 44px;
+			}
+			#titleBar .toggle:before {
+				width: 44px;
+				height: 44px;
+				line-height: 44px;
+				font-size: 20px;
+			}
+
 	}
 
 /* Small */
@@ -3104,4 +3125,45 @@ input, select, textarea {
 				font-size: 10pt;
 			}
 
+
+
+
+			#titleBar {
+				height: 44px;
+			}
+			#titleBar .toggle:before {
+				width: 44px;
+				height: 44px;
+				line-height: 44px;
+				font-size: 20px;
+			}
 	}
+
+
+/* jaimeHMol: Custom styles */
+
+/* @media screen and (max-width: 1680px) { */
+
+
+/* @media screen and (max-width: 1280px) { */
+
+@media screen and (min-width: 737px) {
+	.logoImage{
+		width: 120px;
+		height: 63px;
+	}
+}
+
+@media screen and (max-width: 736px) {
+	.logoImage{
+		width: 80px;
+		height: 44px;
+	}
+}
+
+/* @media screen and (max-width: 360px) {
+	.logoImage{
+		width: 160;
+		height: 85;
+	} */
+}
