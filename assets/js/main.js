@@ -74,8 +74,11 @@
 
 })(jQuery);
 
-var mantainWhoWeAre = true;
+
+
 /* jaimeHMol: Custom functions */
+var mantainWhoWeAre = true;
+
 function changeWhoWeAreSectionHover(who){
 	if (who == 'Javi'){
 		var display = document.getElementById('whoWeAreInitial');
@@ -87,7 +90,6 @@ function changeWhoWeAreSectionHover(who){
 		var display = document.getElementById('whoWeAreJavi');
 		display.style.display = "block";
 		mantainWhoWeAre = false;
-		console.log(mantainWhoWeAre);
 	}
 	if (who == 'Kata'){
 		var display = document.getElementById('whoWeAreInitial');
@@ -99,7 +101,6 @@ function changeWhoWeAreSectionHover(who){
 		var display = document.getElementById('whoWeAreKata');
 		display.style.display = "block";
 		mantainWhoWeAre = false;
-		console.log(mantainWhoWeAre);
 	}
 	if (who == 'Jaime'){
 		var display = document.getElementById('whoWeAreInitial');
@@ -111,7 +112,6 @@ function changeWhoWeAreSectionHover(who){
 		var display = document.getElementById('whoWeAreJaime');
 		display.style.display = "block";
 		mantainWhoWeAre = false;
-		console.log(mantainWhoWeAre);
 	}
 }
 
@@ -126,7 +126,6 @@ function changeWhoWeAreSectionClick(who){
 		var display = document.getElementById('whoWeAreJavi');
 		display.style.display = "block";
 		mantainWhoWeAre = true;
-		console.log(mantainWhoWeAre);
 	}
 	if (who == 'Kata'){
 		var display = document.getElementById('whoWeAreInitial');
@@ -138,7 +137,6 @@ function changeWhoWeAreSectionClick(who){
 		var display = document.getElementById('whoWeAreKata');
 		display.style.display = "block";
 		mantainWhoWeAre = true;
-		console.log(mantainWhoWeAre);
 	}
 	if (who == 'Jaime'){
 		var display = document.getElementById('whoWeAreInitial');
@@ -150,12 +148,10 @@ function changeWhoWeAreSectionClick(who){
 		var display = document.getElementById('whoWeAreJaime');
 		display.style.display = "block";
 		mantainWhoWeAre = true;
-		console.log(mantainWhoWeAre);
 	}
 }
 
 function changeBackWhoWeAreSection(){
-	console.log(mantainWhoWeAre);
 	if (!mantainWhoWeAre){
 		var display = document.getElementById('whoWeAreInitial');
 		display.style.display = "block";
