@@ -1998,6 +1998,7 @@ input, select, textarea {
 		cursor: default;
 		position: relative;
 		margin: -2em 0 4em -2em;
+		/* width:100%; */
 	}
 
 		ul.special li {
@@ -2008,7 +2009,7 @@ input, select, textarea {
 			position: relative;
 			display: inline-block;
 			top: 0;
-			padding: 2em 0 0 2em;
+			padding: 2em 0 0 10em;
 		}
 
 			ul.special li a {
@@ -3142,6 +3143,17 @@ input, select, textarea {
 	}
 
 
+
+
+
+
+
+
+
+
+
+
+
 /* jaimeHMol: Custom styles */
 
 /* @media screen and (max-width: 1680px) { */
@@ -3167,5 +3179,64 @@ input, select, textarea {
 	.logoImage{
 		width: 160;
 		height: 85;
-	} */
+	}
+} */
+
+
+
+
+
+
+
+#whoWeAreContainer{
+	display: none;
+	/* visibility: hidden; */
 }
+
+/* a {
+	-moz-transition: color 0.2s ease-in-out, border-color 0.2s ease-in-out;
+	-webkit-transition: color 0.2s ease-in-out, border-color 0.2s ease-in-out;
+	-ms-transition: color 0.2s ease-in-out, border-color 0.2s ease-in-out;
+	transition: color 0.2s ease-in-out, border-color 0.2s ease-in-out;
+	border-bottom: solid 1px #e4e4e4;
+	color: inherit;
+	text-decoration: none;
+} */
+
+ul.icons {
+	cursor: default;
+	list-style: none;
+	padding-left: 0;
+}
+
+	ul.icons li {
+		display: inline-block;
+		padding: 0 1em 0 0;
+	}
+
+		ul.icons li:last-child {
+			padding-right: 0 !important;
+		}
+
+		ul.icons li .icon:before {
+			font-size: 1.25em;
+		}
+
+/**
+ * Smooth scrolling on the whole document
+ */
+html {
+	scroll-behavior: smooth;
+}
+@media screen and (prefers-reduced-motion: reduce) {
+	html {
+		scroll-behavior: auto;
+	}
+}
+
+/* Color palette:
+Main: Golden Yellow: #FFC32D
+Main complementary: Gold aztec: #CDA34F
+Complementary: Hop Green: #373F27
+Complementary2: Hop Light Green: #636B46
+Light: Beer foam: #C7C7A6 */

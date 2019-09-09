@@ -17,10 +17,10 @@
 		<link rel="icon" href="images/favicon.ico" type="image/x-icon">
 
 	</head>
-	<body class="homepage is-preload">
+	<body class="homepage is-preload" id="begining">
 		<div id="page-wrapper">
 
-			<!-- Header --> \
+			<!-- Header -->
 				<header id="header">
 					<div class="logo container">
 						<div>
@@ -33,7 +33,7 @@
 			<!-- Nav -->
 				<nav id="nav">
 					<ul>
-						<li class="current"><a href="index.html">Hola!</a></li>
+						<li class="current"><a href="#begining">Hola!</a></li>
 						<li><a href="#">Nuestras cervezas</a>
 							<ul>
 								<li><a href="#">IPA especial</a></li>
@@ -49,7 +49,7 @@
 								<!-- <li><a href="#">Veroeros feugiat</a></li> -->
 							</ul>
 						</li>
-						<li><a href="left-sidebar.html">Quienes somos</a></li>
+						<li><a href="#main">Quienes somos</a></li>
 						<li><a href="right-sidebar.html">Donde nos encuentras</a></li>
 						<li><a href="no-sidebar.html">Comentarios y contacto</a></li>
 						<!-- <li><a href="no-sidebar.html">Promociones</a></li> Enfatizar de alguna manera -->
@@ -60,7 +60,7 @@
 				<section id="banner">
 					<div class="content">
 						<h2>Bienvenido a Reeb!</h2>
-						<p>Una experiencia cervecera diferente. Porque artesanal no significa costoso y casera no significa baja calidad.</p>
+						<p>Una experiencia cervecera diferente. Porque artesanal no significa costosa y casera no significa de baja calidad.</p>
 						<!-- <a href="#main" class="button scrolly">Alright let's go</a> -->
 					</div>
 				</section>
@@ -70,28 +70,64 @@
 					<div class="container">
 						<div class="row gtr-200">
 							<div class="col-12">
-
 								<!-- Highlight -->
-									<section class="box highlight">
+									<section class="box highlight" id="whoWeAre">
 										<ul class="special">
-											<li><a href="#" class="icon solid fa-search"><span class="label">Magnifier</span></a></li>
-											<li><a href="#" class="icon solid fa-tablet-alt"><span class="label">Tablet</span></a></li>
-											<li><a href="#" class="icon solid fa-flask"><span class="label">Flask</span></a></li>
-											<li><a href="#" class="icon solid fa-cog"><span class="label">Cog?</span></a></li>
+											<li>
+												<a id="hoverJavi" class="icon solid fa-user" onmouseover="changeWhoWeAreSection('Javi Herrán', 'Maestro cervecero.')" onclick="changeWhoWeAreSection('Javi Herrán', 'Maestro cervecero.')"><span class="label">Javi</span></a>
+											</li>
+											<li>
+												<a id="hoverKata" class="icon solid fa-user"><span class="label">Kata</span></a>
+											</li>
+											<li>
+												<a id="hoverJaime" class="icon solid fa-user"><span class="label">Jaime</span></a>
+											</li>
 										</ul>
-										<header>
-											<h2>A random assortment of icons in circles</h2>
-											<p>And some text that attempts to explain their significance</p>
-										</header>
-										<p>
-											Phasellus quam turpis, feugiat sit amet ornare in, hendrerit in lectus. Praesent semper mod quis eget mi. Etiam eu<br />
-											ante risus. Aliquam erat volutpat. Aliquam luctus et mattis lectus amet pulvinar. Nam nec turpis consequat.
-										</p>
+										<div id="whoWeAreContainer">
+											<header>
+												<h2 id="whoWeAreTitle">Quienes somos?</h2>
+												<p id="whoWeAreSubTitle">La gente detrás de Reeb</p>
+											</header>
+											<p id="whoWeAreDescription">
+												Cargando un genial historia...
+											<p>
+											<ul class="icons">
+												<li><a href="https://twitter.com/JaimeHMol" class="icon brands fa-twitter" target="_blank"><span class="label">Twitter</span></a></li>
+												<li><a href="https://www.instagram.com/jaimeHMol" class="icon brands fa-instagram" target="_blank"><span class="label">Instagram</span></a></li>
+												<li><a href="https://github.com/jaimeHMol" class="icon brands fa-github" target="_blank"><span class="label">GitHub</span></a></li>
+												<li><a href="https://www.linkedin.com/in/jaimeHMol" class="icon brands fa-linkedin" target="_blank"><span class="label">LinkedIn</span></a></li>
+												<li><a href="mailto:jaimeHMol@yahoo.com" class="icon solid fa-envelope"><span class="label">Email</span></a></li>
+											</ul>
+										</div>
+
+										<div id="whoWeAreInitial">
+											<header>
+												<h2>Quienes somos?</h2>
+												<p>La gente detrás de Reeb</p>
+											</header>
+											<div class="row" style="margin-left: auto;">
+												<div class="col-6 col-6-medium col-12-small" >
+														<section class="box feature">
+															<p align="justify">
+																Somos un grupo de jovenes aficionados a la cerveza que insatisfechos con la oferta local de cervezas artesanales decidió crear una propia.
+																<br>
+																<br>
+																Somos apasionados y queremos compartir nuestra pasión cervecera contigo.
+															</p>
+														</section>
+												</div>
+												<div class="col-6 col-6-medium col-12-small" >
+														<section class="box feature">
+															<img src="images/ourOwnBeer.jpg" alt="Nuestra propia cerveza" width="60%" height="40%">
+														</section>
+												</div>
+											</div>
+										</div>
 									</section>
+								</div>
 
-							</div>
+
 							<div class="col-12">
-
 								<!-- Features -->
 									<section class="box features">
 										<h2 class="major"><span>A Major Heading</span></h2>
