@@ -1987,6 +1987,10 @@ input, select, textarea {
 					background-color: #3C5A98;
 				}
 
+				ul.contact li:hover a.fa-facebook-f {
+					background-color: #3C5A98;
+				}
+
 				ul.contact li:hover a.fa-twitter {
 					background-color: #2DAAE4;
 				}
