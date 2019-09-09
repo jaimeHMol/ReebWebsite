@@ -3181,6 +3181,12 @@ input, select, textarea {
 		width: 80px;
 		height: 44px;
 	}
+	ul.special li:first-child {
+		padding: 2em 0 0 1em;
+	}
+	ul.special li {
+		padding: 2em 0 0 5em;
+	}
 }
 
 @media screen and (max-width: 924px) {
@@ -3191,6 +3197,7 @@ input, select, textarea {
 		padding: 2em 0 0 5em;
 	}
 }
+
 
 /* @media screen and (max-width: 360px) {
 	.logoImage{
