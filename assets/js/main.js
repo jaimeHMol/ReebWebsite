@@ -74,47 +74,96 @@
 
 })(jQuery);
 
-
+var mantainWhoWeAre = true;
 /* jaimeHMol: Custom functions */
-function changeWhoWeAreSection(title, description){
-	var display = document.getElementById('whoWeAreTitle');
-	display.innerHTML = "";
-	display.innerHTML = title;
+function changeWhoWeAreSectionHover(who){
+	if (who == 'Javi'){
+		var display = document.getElementById('whoWeAreInitial');
+		display.style.display = "none";
+		var display = document.getElementById('whoWeAreKata');
+		display.style.display = "none";
+		var display = document.getElementById('whoWeAreJaime');
+		display.style.display = "none";
+		var display = document.getElementById('whoWeAreJavi');
+		display.style.display = "block";
+		mantainWhoWeAre = false;
+		console.log(mantainWhoWeAre);
+	}
+	if (who == 'Kata'){
+		var display = document.getElementById('whoWeAreInitial');
+		display.style.display = "none";
+		var display = document.getElementById('whoWeAreJavi');
+		display.style.display = "none";
+		var display = document.getElementById('whoWeAreJaime');
+		display.style.display = "none";
+		var display = document.getElementById('whoWeAreKata');
+		display.style.display = "block";
+		mantainWhoWeAre = false;
+		console.log(mantainWhoWeAre);
+	}
+	if (who == 'Jaime'){
+		var display = document.getElementById('whoWeAreInitial');
+		display.style.display = "none";
+		var display = document.getElementById('whoWeAreKata');
+		display.style.display = "none";
+		var display = document.getElementById('whoWeAreJavi');
+		display.style.display = "none";
+		var display = document.getElementById('whoWeAreJaime');
+		display.style.display = "block";
+		mantainWhoWeAre = false;
+		console.log(mantainWhoWeAre);
+	}
+}
 
-	var display = document.getElementById('whoWeAreDescription');
-	display.innerHTML = "";
-	display.innerHTML = description;
-
-	var display = document.getElementById('whoWeAreInitial');
-	display.style.display = "none";
-	var display = document.getElementById('whoWeAreContainer');
-	display.style.display = "block";
-	// var display = document.getElementById('whoWeAreInitial');
-	// display.style.visibility = "hidden";
-	// var display = document.getElementById('whoWeAreContainer');
-	// display.style.visibility = "visible";
+function changeWhoWeAreSectionClick(who){
+	if (who == 'Javi'){
+		var display = document.getElementById('whoWeAreInitial');
+		display.style.display = "none";
+		var display = document.getElementById('whoWeAreKata');
+		display.style.display = "none";
+		var display = document.getElementById('whoWeAreJaime');
+		display.style.display = "none";
+		var display = document.getElementById('whoWeAreJavi');
+		display.style.display = "block";
+		mantainWhoWeAre = true;
+		console.log(mantainWhoWeAre);
+	}
+	if (who == 'Kata'){
+		var display = document.getElementById('whoWeAreInitial');
+		display.style.display = "none";
+		var display = document.getElementById('whoWeAreJavi');
+		display.style.display = "none";
+		var display = document.getElementById('whoWeAreJaime');
+		display.style.display = "none";
+		var display = document.getElementById('whoWeAreKata');
+		display.style.display = "block";
+		mantainWhoWeAre = true;
+		console.log(mantainWhoWeAre);
+	}
+	if (who == 'Jaime'){
+		var display = document.getElementById('whoWeAreInitial');
+		display.style.display = "none";
+		var display = document.getElementById('whoWeAreKata');
+		display.style.display = "none";
+		var display = document.getElementById('whoWeAreJavi');
+		display.style.display = "none";
+		var display = document.getElementById('whoWeAreJaime');
+		display.style.display = "block";
+		mantainWhoWeAre = true;
+		console.log(mantainWhoWeAre);
+	}
 }
 
 function changeBackWhoWeAreSection(){
-	var display = document.getElementById('whoWeAreContainer');
-	display.style.display = "none";
-	var display = document.getElementById('whoWeAreInitial');
-	display.style.display = "block";
-	// var display = document.getElementById('whoWeAreContainer');
-	// display.style.visibility = "hidden";
-	// var display = document.getElementById('whoWeAreInitial');
-	// display.style.visibility = "visible";
-
-
-	// var display = document.getElementById('whoWeAreTitle');
-	// display.innerHTML = "";
-	// display.innerHTML = "Quienes somos?";
-	//
-	// var display = document.getElementById('whoWeAreSubTitle');
-	// display.innerHTML = "";
-	// display.innerHTML = "La gente detrás de Reeb";
-	//
-	// var display = document.getElementById('whoWeAreDescription');
-	// display.innerHTML = "";
-	// display.innerHTML = "Somos un grupo de jovenes aficionados a la cerveza que insatisfechos con la oferta local de cervezas artesanales decidió crear una propia...&lt;br/&gt; &lt;img src='images/ourOwnBeer.jpg' alt='Nuestra propia cerveza' width='40%' height='40%'&gt; &lt;br/&gt; Somos apasionados y queremos compartir nuestra pasión cervecera contigo.";
+	console.log(mantainWhoWeAre);
+	if (!mantainWhoWeAre){
+		var display = document.getElementById('whoWeAreInitial');
+		display.style.display = "block";
+		var display = document.getElementById('whoWeAreKata');
+		display.style.display = "none";
+		var display = document.getElementById('whoWeAreJavi');
+		display.style.display = "none";
+		var display = document.getElementById('whoWeAreJaime');
+		display.style.display = "none";
+	}
 }

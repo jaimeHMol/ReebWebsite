@@ -69,37 +69,20 @@
 				<section id="main">
 					<div class="container">
 						<div class="row gtr-200">
-							<div class="col-12">
+							<div class="col-12" onmouseout="changeBackWhoWeAreSection()">
 								<!-- Highlight -->
 									<section class="box highlight" id="whoWeAre">
 										<ul class="special">
 											<li>
-												<a id="hoverJavi" class="icon solid fa-user" onmouseover="changeWhoWeAreSection('Javi Herrán', 'Maestro cervecero.')" onclick="changeWhoWeAreSection('Javi Herrán', 'Maestro cervecero.')"><span class="label">Javi</span></a>
+												<a id="hoverJavi" class="icon solid fa-user" onmouseover="changeWhoWeAreSectionHover('Javi')" onclick="changeWhoWeAreSectionClick('Javi')"><span class="label">Javi</span></a>
 											</li>
 											<li>
-												<a id="hoverKata" class="icon solid fa-user"><span class="label">Kata</span></a>
+												<a id="hoverKata" class="icon solid fa-user" onmouseover="changeWhoWeAreSectionHover('Kata')" onclick="changeWhoWeAreSectionClick('Kata')"><span class="label">Kata</span></a>
 											</li>
 											<li>
-												<a id="hoverJaime" class="icon solid fa-user"><span class="label">Jaime</span></a>
+												<a id="hoverJaime" class="icon solid fa-user" onmouseover="changeWhoWeAreSectionHover('Jaime')" onclick="changeWhoWeAreSectionClick('Jaime')"><span class="label">Jaime</span></a>
 											</li>
 										</ul>
-										<div id="whoWeAreContainer">
-											<header>
-												<h2 id="whoWeAreTitle">Quienes somos?</h2>
-												<p id="whoWeAreSubTitle">La gente detrás de Reeb</p>
-											</header>
-											<p id="whoWeAreDescription">
-												Cargando un genial historia...
-											<p>
-											<ul class="icons">
-												<li><a href="https://twitter.com/JaimeHMol" class="icon brands fa-twitter" target="_blank"><span class="label">Twitter</span></a></li>
-												<li><a href="https://www.instagram.com/jaimeHMol" class="icon brands fa-instagram" target="_blank"><span class="label">Instagram</span></a></li>
-												<li><a href="https://github.com/jaimeHMol" class="icon brands fa-github" target="_blank"><span class="label">GitHub</span></a></li>
-												<li><a href="https://www.linkedin.com/in/jaimeHMol" class="icon brands fa-linkedin" target="_blank"><span class="label">LinkedIn</span></a></li>
-												<li><a href="mailto:jaimeHMol@yahoo.com" class="icon solid fa-envelope"><span class="label">Email</span></a></li>
-											</ul>
-										</div>
-
 										<div id="whoWeAreInitial">
 											<header>
 												<h2>Quienes somos?</h2>
@@ -123,9 +106,57 @@
 												</div>
 											</div>
 										</div>
+
+										<div id="whoWeAreJavi">
+											<header>
+												<h2 id="whoWeAreTitle">Javi Herrán</h2>
+												<p id="whoWeAreSubTitle">La gente detrás de Reeb</p>
+											</header>
+											<p id="whoWeAreDescription">
+												El maestro cervecero.
+											<p>
+											<ul class="icons">
+												<li><a href="#" class="icon brands fa-twitter" target="_blank"><span class="label">Twitter</span></a></li>
+												<li><a href="#" class="icon brands fa-instagram" target="_blank"><span class="label">Instagram</span></a></li>
+												<li><a href="#" class="icon brands fa-linkedin" target="_blank"><span class="label">LinkedIn</span></a></li>
+												<li><a href="#" class="icon solid fa-envelope"><span class="label">Email</span></a></li>
+											</ul>
+										</div>
+										<div id="whoWeAreKata">
+											<header>
+												<h2 id="whoWeAreTitle">Kata Perez</h2>
+												<p id="whoWeAreSubTitle">La gente detrás de Reeb</p>
+											</header>
+											<p id="whoWeAreDescription">
+												Pura creatividad y diseño.
+											<p>
+											<ul class="icons">
+												<li><a href="#" class="icon brands fa-twitter" target="_blank"><span class="label">Twitter</span></a></li>
+												<li><a href="#" class="icon brands fa-instagram" target="_blank"><span class="label">Instagram</span></a></li>
+												<li><a href="#" class="icon brands fa-linkedin" target="_blank"><span class="label">LinkedIn</span></a></li>
+												<li><a href="#" class="icon solid fa-envelope"><span class="label">Email</span></a></li>
+											</ul>
+										</div>
+										<div id="whoWeAreJaime">
+											<header>
+												<h2 id="whoWeAreTitle">Jaime Herrán</h2>
+												<p id="whoWeAreSubTitle">La gente detrás de Reeb</p>
+											</header>
+											<p id="whoWeAreDescription">
+												Con los cacharros tecnólogicos.
+											<p>
+											<ul class="icons">
+												<li><a href="https://twitter.com/JaimeHMol" class="icon brands fa-twitter" target="_blank"><span class="label">Twitter</span></a></li>
+												<li><a href="https://www.instagram.com/jaimeHMol" class="icon brands fa-instagram" target="_blank"><span class="label">Instagram</span></a></li>
+												<li><a href="https://github.com/jaimeHMol" class="icon brands fa-github" target="_blank"><span class="label">GitHub</span></a></li>
+												<li><a href="https://www.linkedin.com/in/jaimeHMol" class="icon brands fa-linkedin" target="_blank"><span class="label">LinkedIn</span></a></li>
+												<li><a href="mailto:jaimeHMol@yahoo.com" class="icon solid fa-envelope"><span class="label">Email</span></a></li>
+											</ul>
+										</div>
+
+
 									</section>
 								</div>
-
 
 							<div class="col-12">
 								<!-- Features -->

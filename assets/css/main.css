@@ -2012,6 +2012,10 @@ input, select, textarea {
 			padding: 2em 0 0 10em;
 		}
 
+		ul.special li:first-child {
+			padding: 2em 0 0 2em;
+		}
+
 			ul.special li a {
 				display: block;
 				outline: 0;
@@ -3166,12 +3170,25 @@ input, select, textarea {
 		width: 120px;
 		height: 63px;
 	}
+	/* ul.special li a:before {
+		width: 2.25em;
+		height: 2.25em;
+	} */
 }
 
 @media screen and (max-width: 736px) {
 	.logoImage{
 		width: 80px;
 		height: 44px;
+	}
+}
+
+@media screen and (max-width: 924px) {
+	ul.special li:first-child {
+		padding: 2em 0 0 1em;
+	}
+	ul.special li {
+		padding: 2em 0 0 5em;
 	}
 }
 
@@ -3182,26 +3199,18 @@ input, select, textarea {
 	}
 } */
 
-
-
-
-
-
-
-#whoWeAreContainer{
+#whoWeAreJavi{
 	display: none;
 	/* visibility: hidden; */
 }
-
-/* a {
-	-moz-transition: color 0.2s ease-in-out, border-color 0.2s ease-in-out;
-	-webkit-transition: color 0.2s ease-in-out, border-color 0.2s ease-in-out;
-	-ms-transition: color 0.2s ease-in-out, border-color 0.2s ease-in-out;
-	transition: color 0.2s ease-in-out, border-color 0.2s ease-in-out;
-	border-bottom: solid 1px #e4e4e4;
-	color: inherit;
-	text-decoration: none;
-} */
+#whoWeAreKata{
+	display: none;
+	/* visibility: hidden; */
+}
+#whoWeAreJaime{
+	display: none;
+	/* visibility: hidden; */
+}
 
 ul.icons {
 	cursor: default;
@@ -3233,6 +3242,10 @@ html {
 		scroll-behavior: auto;
 	}
 }
+
+
+
+
 
 /* Color palette:
 Main: Golden Yellow: #FFC32D
