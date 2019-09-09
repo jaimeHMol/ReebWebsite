@@ -1823,7 +1823,9 @@ input, select, textarea {
 		input[type="reset"]:hover,
 		button:hover,
 		.button:hover {
-			background: #c1edbb;
+			/* background: #c1edbb; */
+			background: #C7C7A6;
+			/* color: #000; */
 		}
 
 		input[type="button"]:active,
@@ -2149,19 +2151,19 @@ input, select, textarea {
 	}
 
 	form ::-webkit-input-placeholder {
-		color: #555 !important;
+		color: #BEC0BE !important;
 	}
 
 	form :-moz-placeholder {
-		color: #555 !important;
+		color: #BEC0BE !important;
 	}
 
 	form ::-moz-placeholder {
-		color: #555 !important;
+		color: #BEC0BE !important;
 	}
 
 	form :-ms-input-placeholder {
-		color: #555 !important;
+		color: #BEC0BE !important;
 	}
 
 	form ::-moz-focus-inner {
