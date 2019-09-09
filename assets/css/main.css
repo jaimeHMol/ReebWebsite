@@ -739,6 +739,10 @@ input, select, textarea {
 						padding: 100px 0 0 100px;
 					}
 
+					#productContainer{
+						padding-top: 40px; /*jaimeHMol*/
+					}
+
 					.row.gtr-200.gtr-uniform {
 						margin-top: -100px;
 					}
@@ -982,6 +986,10 @@ input, select, textarea {
 
 					.row.gtr-200 > * {
 						padding: 80px 0 0 80px;
+					}
+
+					#productContainer{
+						padding-top: 40px; /*jaimeHMol*/
 					}
 
 					.row.gtr-200.gtr-uniform {
@@ -3238,6 +3246,13 @@ ul.icons {
 			font-size: 1.25em;
 		}
 
+#product, #whoWeAre, #whereWeAre {
+	border-bottom: solid 5px #C7C7A6;
+	/* border-top: solid 5px #C7C7A6; */
+	/* border-top-width: 10px;
+	border-bottom-width: 10px; */
+}
+
 /**
  * Smooth scrolling on the whole document
  */
@@ -3249,7 +3264,6 @@ html {
 		scroll-behavior: auto;
 	}
 }
-
 
 
 
